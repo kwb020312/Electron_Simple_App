@@ -1,0 +1,14 @@
+{
+	"name": "Electron",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/kwb020312/Electron_Simple_App",
+	"author": "kwb020312 <kwb020312@naver.com>",
+	"license": "MIT",
+	"scripts": {
+		"start": "electron ."
+	},
+	"dependencies": {
+		"electron": "11.1.1"
+	}
+}
