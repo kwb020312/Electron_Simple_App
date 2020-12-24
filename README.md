@@ -10,6 +10,10 @@ VSC (비쥬얼 스튜디오 코드) 를 포함해 Slack(슬렉) 등 많은 애�
 
 ## 앱 띄워보기
 
+```javascript
+yarn add electron
+```
+
 <img src="./gitImages/SimpleHTML.png">
 
 위 HTML 은 매우 간단한 구조인 것을 알 수 있는데 , 보여주고 싶은 HTML 코드를 짜준다.
@@ -49,3 +53,23 @@ electron .
 ```
 
 <img src="./gitImages/RunResult.png">
+
+## 앱 빌드및 배포하기
+
+그렇다면 이렇게 만들어진 앱들을 어떻게 빌드 해야할까??
+
+```javascript
+yarn add electron-packager --dev
+```
+
+개발옵션을 주어 electron-packager 를 설치한다.
+
+<img src="./gitImages/ElectronPackager.png">
+
+그 후 package.json 에 scripts 부분을 만들어주어야 하는데,
+
+--out=dist 옵션은 앱을 빌드한 후 어느 경로로 산출할지 , --asar 는 아톰에디터를 위한 추가 옵션이며 --all 옵션은 모든 운영체제의 electron 앱을 생성하겠다는 것이다.
+
+<img src="./gitImages/Dists.png">
+
+그렇게 해서 이렇게 만들어지면 배포하면 되겠다.

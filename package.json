@@ -6,9 +6,13 @@
 	"author": "kwb020312 <kwb020312@naver.com>",
 	"license": "MIT",
 	"scripts": {
-		"start": "electron ."
+		"start": "electron .",
+		"build": "electron-packager . --out=dist --asar --overwite --all"
 	},
 	"dependencies": {
 		"electron": "11.1.1"
+	},
+	"devDependencies": {
+		"electron-packager": "15.2.0"
 	}
 }
